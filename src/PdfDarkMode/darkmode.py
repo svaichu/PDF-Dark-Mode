@@ -25,7 +25,7 @@ from fpdf import FPDF
 from numba import jit
 from pdf2image import convert_from_path
 from PIL import Image
-from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger
 
 
 class Darkmode:
@@ -244,7 +244,7 @@ class Darkmode:
         pdfs = list(self.temp_pdfs.keys())
 
         for pdf in pdfs:
-            merger = PdfFileMerger()
+            merger = PdfMerger()
 
             for file in self.temp_pdfs[pdf]:
                 merger.append(file)
