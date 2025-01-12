@@ -245,7 +245,7 @@ class Darkmode:
         pdfs = list(self.temp_pdfs.keys())
 
         for pdf in pdfs:
-            merger = PdfFileMerger()
+            merger = PdfMerger()
 
             for file in self.temp_pdfs[pdf]:
                 merger.append(file)
