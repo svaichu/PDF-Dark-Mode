@@ -25,7 +25,8 @@ from fpdf import FPDF
 from numba import jit
 from pdf2image import convert_from_path
 from PIL import Image
-from PyPDF2 import PdfFileMerger
+# from PyPDF2 import PdfFileMerger
+from PyPDF2 import PdfMerger as PdfFileMerger
 
 
 class Darkmode:
